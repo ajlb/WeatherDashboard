@@ -1,0 +1,152 @@
+body {
+    background: white;
+}
+
+#main {
+    margin: 20px;
+}
+
+
+/*SEARCH BOX*/
+
+#search-box {
+    margin: 6px;
+    background-color: lightgrey;
+    border-radius: 8px;
+}
+
+form {
+    margin: 10px;
+}
+
+input {
+    width: 70%;
+}
+
+#submit {
+    background-color: blue;
+    border: none;
+    color: white;
+    font-size: small;
+    text-align: center;
+    width: 20%;
+}
+
+#search-history {
+    padding-bottom: 10px;
+}
+
+.result-history {
+    width: 100%;
+    text-align: left;
+    border: 1px solid gray;
+    background-color: white;
+    padding-bottom: 4px;
+    margin-left: -5px;
+    margin-bottom: -1px;
+}
+
+
+/*RESULTS BOX*/
+
+#results-box {
+    margin: 6px;
+    padding-top: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
+/* temp weather */
+
+#temp-weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* current weather */
+
+#current-weather {
+    border: 1px lightgrey solid;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 3vw;
+}
+
+#uv {
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    border-radius: 4px;
+}
+
+
+/* 5 day forecast */
+
+#forecast {
+    margin: 6px;
+}
+
+.day {
+    float: left;
+    border-radius: 8px;
+    background-color: lightskyblue;
+    margin: 3px;
+    padding: 4px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+.one-day {
+    font-size: 1;
+    color: white;
+    margin-bottom: 4px;
+}
+
+
+/* media queryies for different size screens */
+
+@media screen and (max-width: 992px) {
+    #forecast {
+        display: flex;
+        flex-direction: column;
+    }
+    .day {
+        padding: 10px 6px 0px 6px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .day div {
+        display: flex;
+    }
+    .day img {
+        margin-top: 0px;
+        margin-bottom: 14px;
+    }
+    .day p {
+        padding-top: 6px;
+        margin: 0px 5px 0px 5px;
+    }
+    .day h5 {
+        padding-top: 5px;
+    }
+}
+
+@media screen and (max-width: 772px) {
+    .day {
+        display: flex;
+        justify-content: space-around;
+    }
+    .day div {
+        display: block;
+        margin-top: -6px;
+    }
+}

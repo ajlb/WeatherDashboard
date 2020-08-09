@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+
+<head>
+
+    <!--bootstrap, font awesome, meta, css-->
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
+    <script src="https://use.fontawesome.com/0d701d042a.js"></script>
+    <link href='./Assets/css/style.css' rel='stylesheet' type='text/css'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <!--header-->
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-12 bg-dark text-light text-center">
+                <h1>Weather Dashboard</h1>
+            </div>
+        </header>
+
+        <!--main display-->
+        <section id="main" class="row">
+
+            <!--search and results area-->
+            <section id="search-box" class="col-3">
+                <div id="search-form">
+                    <form>
+                        <label for="query">Search for a City:</label>
+                        <div class="row">
+                            <input type="text" name="query" id="query" />
+                            <button type="submit" id="submit" class="fa fa-search btn" aria-hidden="true"></button>
+                        </div>
+                    </form>
+                </div>
+                <div id="search-results"></div>
+            </section>
+
+            <!--weather display-->
+            <section id="results-box" class="col">
+                <div id="current-weather">
+                    <div id="temp-weather">
+                        <p>Search for a City to get the weather</p>
+                        <img src="./Assets/images/sun.svg" alt="sun icon" style="width: 100px" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="forecast" class="col"></div>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <!--moment, jquery, and script.js-->
+    <script src='//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='./Assets/js/script.js'></script>
+</body>
+
+</html>
