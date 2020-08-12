@@ -1,5 +1,5 @@
 # Weather Dashboard
-An API based simple weather information application.
+An API based simple weather information dashboard.
 
 ![screenshot of JavaScript code quiz](./Assets/images/WeatherDashboard.png)
 https://n-lambert.github.io/WeatherDashboard/
