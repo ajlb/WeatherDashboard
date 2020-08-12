@@ -140,7 +140,7 @@ function getUV(response) {
     } else if (parseInt(uv) < 11) {
         $("#uv").css("background-color", "red");
     } else {
-        $("#uv").css("background-color", "purple");
+        $("#uv").css("background-color", "violet");
     }
 
 
@@ -168,16 +168,16 @@ function getForecast(response) {
         dateIconDiv.append(iconImg);
         oneDay.append(dateIconDiv);
 
-        const textItemsDiv = $("<div>");
+        const resultsEl = $("<div>");
         const temp = calcTemp(response.list[index].main.temp);
         const tempDiv = $("<p class='one-day'></p>");
         tempDiv.html(`Temp: ${temp} °F`);
-        textItemsDiv.append(tempDiv);
+        resultsEl.append(tempDiv);
 
-        const humidityDiv = $("<p class='one-day'></p>");
-        humidityDiv.html(`Humidity: ${response.list[index].main.humidity}%`);
-        textItemsDiv.append(humidityDiv);
-        oneDay.append(textItemsDiv);
+        const humidityEl = $("<p class='one-day'></p>");
+        humidityEl.html(`Humidity: ${response.list[index].main.humidity}%`);
+        resultsEl.append(humidityEl);
+        oneDay.append(resultsEl);
 
         //append finished day to forecast        
         forecastDiv.append(oneDay);
