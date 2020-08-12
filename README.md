@@ -17,6 +17,7 @@ This weather dasboard gets current weather, forecast data and uv index from the 
 - Current weather: https://openweathermap.org/api
 - UV Index: https://openweathermap.org/api/uvi
 - 5 day forecast: https://openweathermap.org/forecast5
+
  It also utilizes bootstrap and css to make the application responsive.
 
 ## Usage ##
